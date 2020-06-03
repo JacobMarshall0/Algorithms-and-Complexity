@@ -3,14 +3,12 @@ using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 
-
 namespace AlgorithmsAssessment1
 {
     class SortingAlgorithms
     {
         //creates public int to track steps taken to sort an array
         public static int steps = 0;
-
 
         // insertion sort in ascending order code
         public string[] InsertionSortAsc(string[] array)
@@ -242,7 +240,6 @@ namespace AlgorithmsAssessment1
             int count = 0;
             foreach (string line in array)
             {
-
                 if (array.Count() == 2048)
                 {
                     if (count % 50 == 0)
@@ -258,7 +255,6 @@ namespace AlgorithmsAssessment1
                     }
                 }
                 count++;
-
             }
             return array;
         }
@@ -306,10 +302,8 @@ namespace AlgorithmsAssessment1
                     }
                 }
                 count++;
-
             }
             return array;     
-        
         }        
     }
 }
