@@ -35,26 +35,6 @@ namespace AlgorithmsAssessment1
                 }
                 steps++; // increment steps to keep track of iterations
             }
-            /* --------------- Terrible code that failed to find other positions, - ran out of memory
-            int indexDown = positions[0] - 1;
-            while (Convert.ToInt32(array[indexDown]) == value)
-            {
-                indexDown--;
-                if (Convert.ToInt32(array[indexDown]) == value)
-                {
-                    positions.Add(indexDown);
-                }
-            }
-            int indexUp = positions[0] + 1;
-            while (Convert.ToInt32(array[indexUp]) == value)
-            {
-                indexUp++;
-                if (Convert.ToInt32(array[indexUp]) == value)
-                {
-                    positions.Add(indexUp);
-                }
-            }
-            */
             return $"Not found, it took {steps} steps to determine this"; // return error message indicating the value could not be found  
         }
         
